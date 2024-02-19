@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+.custom-heading {
+  color: blue;
+  font-weight: bold;
+}
+.custom-calender {
+  margin-left: 10px;
+  font-size: 28px;
+  padding: 2px 0;
+}
+.custom-one {
+  border: 2px solid rgb(175, 173, 173);
+  margin: 30px auto;
+  border-radius: 30px;
+  background-color: rgb(222, 222, 226);
+  box-shadow: 1px 3px 3px 5px rgb(160, 159, 159);
+}
+label.error {
+  color: red;
+}
+input,
+select {
+  outline: 0.5px solid rgb(148, 146, 146);
+}
+.custom-button:hover {
+  transform: translateY(-4px);
+  transition: all 0.5s ease;
+  box-shadow: 1px 2px 3px 3px rgb(142, 140, 140);
+}
+#label-check {
+  color: blue;
+  font-size: 15px;
+}
+h2 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .custom-one {
+    border: none;
+  }
+  #label-check {
+    font-size: 12px;
+  }
+}
