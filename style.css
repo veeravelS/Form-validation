@@ -73,4 +73,7 @@ select {
   .fa {
     font-size: 16px;
   }
+  #label-check{
+    color:rgb(3, 74, 12)
+  }
 }
