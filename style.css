@@ -5,10 +5,13 @@
   padding: 0;
 }
 body {
+  background: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-image: cover;
   font-family: "poppins", sans-serif;
 }
 .custom-heading {
-  color: blue;
+  color: rgb(234, 234, 235);
   font-weight: bold;
 }
 .custom-calender {
@@ -17,14 +20,18 @@ body {
   padding: 2px 0;
 }
 .custom-one {
-  border: 2px solid rgb(175, 173, 173);
+  border: 1px solid rgb(104, 104, 104);
   margin: 30px auto;
   border-radius: 30px;
-  background-color: rgb(222, 222, 226);
-  box-shadow: 1px 3px 3px 5px rgb(160, 159, 159);
+  background: transparent;
+  backdrop-filter: blur(100px);
+  box-shadow: 1px 1px 1px 1px rgb(83, 82, 82);
 }
 label.error {
-  color: red;
+  color: rgb(18, 223, 226);
+}
+label {
+  color: #fff;
 }
 input,
 select {
@@ -36,11 +43,24 @@ select {
   box-shadow: 1px 2px 3px 3px rgb(142, 140, 140);
 }
 #label-check {
-  color: blue;
+  color: rgb(175, 241, 99);
   font-size: 15px;
 }
-h2 {
+.custom-color {
   display: none;
+  color:rgb(80, 239, 65)
+}
+.custom-password {
+  position: relative;
+}
+.password-show,.password-shows{
+  position: absolute;
+  font-size: 17px;
+  top: 10px;
+  right: 10px;
+}
+.password-show:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -49,5 +69,8 @@ h2 {
   }
   #label-check {
     font-size: 12px;
+  }
+  .fa {
+    font-size: 16px;
   }
 }

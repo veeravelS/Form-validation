@@ -1,4 +1,26 @@
-$(document).ready(function () {
+$(document).ready(function(){
+  $(".password-show").click(function(event){
+    $(this).toggleClass('fa-eye-slash');
+    var x = $(".input-control").attr("type");
+    if(x == "password"){
+      $(".input-control").attr("type","text")
+    }
+    else{
+      $(".input-control").attr("type","password")
+    };
+  })
+
+    $(".password-shows").click(function(event){
+      $(this).toggleClass('fa-eye-slash');
+      var x = $(".inputs-control").attr("type");
+      if(x == "password"){
+        $(".inputs-control").attr("type","text")
+      }
+      else{
+        $(".inputs-control").attr("type","password")
+      };
+    })
+
   $("#register").validate({
     rules: {
       fname: {
